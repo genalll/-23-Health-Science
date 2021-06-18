@@ -5,7 +5,9 @@ const popup=document.querySelector(".containerpopup");
 const popupClose=document.querySelector(".popup__close");
 const heroButton=document.querySelector(".hero-button");
 const cardContainer=document.querySelector(".result-container__cards");
-const buttonSubmit=document.querySelector(".popup__button_active");
+const buttonSubmit=document.querySelector("#buttonsubmit");
+const checkbox = document.querySelector('#inlineCheckboxp');
+let popupForm=document.querySelector('.popup__form');
 
 class DataStorage {
 
@@ -25,6 +27,15 @@ class DataStorage {
     }
 
 let Storage= new DataStorage;
+
+
+checkbox.addEventListener('change', () => {
+        if ( checkbox.checked ) {
+            buttonSubmit.removeAttribute('disabled');
+        } else {
+            buttonSubmit.setAttribute('disabled', 'true');
+        }
+    });
 
 
 
@@ -49,6 +60,8 @@ function openImagePopup(event){
     if (event.target.classList.contains('hero-buttons')) {
         popup.classList.toggle('popup_is-opened');
         }
+
+    buttonSubmit.setAttribute('disabled', 'true');
 }
 
 document.addEventListener('click', openImagePopup);
@@ -56,8 +69,12 @@ document.addEventListener('click', openImagePopup);
 
 
 buttonSubmit.onclick=function addCardBug(event){
+        if(popupForm.checkValidity() ){
+
+
         Storage.clear();
         cardContainer.innerHTML="";
+        
         //sex
         let sex="";
         let name="";
@@ -141,6 +158,7 @@ buttonSubmit.onclick=function addCardBug(event){
         if (inlineCheckbox7Container.checked){
                 inlineCheckbox7=1;
         }
+
 
         let inlineCheckbox8Container=document.querySelector('#inlineCheckbox8');
         if (inlineCheckbox8Container.checked){
@@ -244,7 +262,6 @@ buttonSubmit.onclick=function addCardBug(event){
         inlineCheckbox21,
         inlineCheckbox22)
 
-        alert(patient.createAnsaver());
        
         Storage.addTolocalStorage(patient.createAnsaver().name,patient.createAnsaver());
         //Отрисовка рекомендаций пациента.
@@ -257,10 +274,20 @@ buttonSubmit.onclick=function addCardBug(event){
         });
         
         
+        //Проверка на дурака.
+
+
+
+
+
+
+
+
 
 
         event.preventDefault();
         popup.classList.toggle('popup_is-opened');
+}
         
 }
 

@@ -50,9 +50,9 @@ rel="stylesheet"
                   </div>
                   
 
-                  <input  name="name" class="popup__input popup__input_type_link-date" type="text" required placeholder="ФИО участника" id="name">
+                  <input  name="name" class="popup__input popup__input_type_link-date" type="text" required placeholder="ФИО участника" id="name" required="required" minlength="5" maxlength="40">
                   <span id="linck-name-eror" class="eror"></span>
-                  <input type="number" name="age" id="age" class="popup__input popup__input_type_fio" min="18" max="100" required placeholder="Возрат участника">
+                  <input type="number" name="age" id="age" class="popup__input popup__input_type_fio" min="18" max="100" required placeholder="Возрат участника" required="required">
                   <span id="plac-name-eror" class="eror"></span>
     
 
@@ -104,6 +104,11 @@ rel="stylesheet"
                   <p class="popup__ansver">Есть ли у вас на коже особенно на лице  плотные узелки и узлов желтого или серо-белого цвета или розоватого , сливающихся с кожей, плотной консистенции с видимыми сосудами или без?</p>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option1" />
+                    <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+                  </div>
+                  <p class="popup__ansver">Вы ведь правда читаете вопросы и честно на них отвечаете? Это выжно речь идет о вашем здоровье. </p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckboxp"/>
                     <label class="form-check-label" for="inlineCheckbox1">ДА</label>
                   </div>
                   <p class="popup__ansver">Есть ли у вас на коже эрозии или язвы с плотным дном и подрытыми краями, безболезненные, иногда кровоточащие?</p>
@@ -170,7 +175,7 @@ rel="stylesheet"
 
 
                   <img src="/sursepopup/Present.svg" class="popup__logo" alt="">
-                  <button type="submit" method = "post" class="button popup__button popup__button_active" name="submit">Обработать анкету</button>
+                  <button type="submit" method = "post" class="button popup__button popup__button_active" name="submit" id="buttonsubmit">Обработать анкету</button>
 
               </form>
               <div class="popup__screen-container">
