@@ -4,6 +4,10 @@ body{
     margin: 0;
 }
 
+a {
+    text-decoration:none !important;
+  }
+
 input:invalid {
     border:solid 1px red;
   }
