@@ -170,6 +170,7 @@ class CardPatient {
 function openImagePopup(event) {
         if (event.target.classList.contains('popup__close')) {
                 popup.classList.toggle('popup_is-opened');
+                Storage.clear();
         }
         if (event.target.classList.contains('hero-buttons')) {
                 popup.classList.toggle('popup_is-opened');
