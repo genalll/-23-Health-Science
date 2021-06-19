@@ -9,7 +9,7 @@
  
  Прототип веб приложения полностью адаптивен и доступен на устройствах от с разрешением экрана 380px.
 
- В папке testAPKforAndroid находится APK установочныq файл приложения для Android.
+ В папке testAPKforAndroid находится APK установочный файл приложения для Android.
 
 <a href="https://genalll.github.io/-23-Health-Science/">Cсылка на проект</a>
 ---  
