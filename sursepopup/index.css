@@ -161,9 +161,24 @@ input:required:valid {
     align-items: center;
 }
 .text__info{
+    display: block;
     color:white;
     padding:10px;
 }
-.result-container{
+.result-container__cards{
     border:solid 2px white;
+    display:flex;
+    flex-direction: column;
+}
+.carpdpatient__data{
+    font-size: 14px;
+    text-transform:uppercase;
+    font-weight: bold;
+    color:lightsteelblue;
+}
+.carpdpatient__patient{
+    font-size: 18px;
+    text-transform:uppercase;
+    font-weight: bold;
+    color:ghostwhite;
 }
