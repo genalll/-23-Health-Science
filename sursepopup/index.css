@@ -7,6 +7,14 @@ body{
 input:invalid {
     border:solid 1px red;
   }
+
+input:required:valid {
+    border:solid 1px black;
+  }
+
+
+
+ 
 .containerpopup{
     position: absolute;
     width: 100%;
