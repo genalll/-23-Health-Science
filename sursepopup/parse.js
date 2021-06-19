@@ -29,13 +29,14 @@ class DataStorage {
 let Storage= new DataStorage;
 
 
-checkbox.addEventListener('change', () => {
-        if ( checkbox.checked ) {
+//checkbox.addEventListener('change', () => {
+       // if ( checkbox.checked ) {
             buttonSubmit.removeAttribute('disabled');
-        } else {
-            buttonSubmit.setAttribute('disabled', 'true');
-        }
-    });
+       // } else {
+          //  buttonSubmit.setAttribute('disabled', 'true');
+            
+      //  }
+  //  });
 
 
 
@@ -61,7 +62,7 @@ function openImagePopup(event){
         popup.classList.toggle('popup_is-opened');
         }
 
-    buttonSubmit.setAttribute('disabled', 'true');
+   // buttonSubmit.setAttribute('disabled', 'true');
 }
 
 document.addEventListener('click', openImagePopup);

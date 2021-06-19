@@ -3,6 +3,10 @@
 body{
     margin: 0;
 }
+
+input:invalid {
+    border:solid 1px red;
+  }
 .containerpopup{
     position: absolute;
     width: 100%;
