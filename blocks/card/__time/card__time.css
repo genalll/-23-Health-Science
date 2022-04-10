@@ -1,0 +1,11 @@
+.card__time{
+    font-family: Graphik LC;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: red;
+    text-transform: uppercase;
+}

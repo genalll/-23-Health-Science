@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="sursepopup/index.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+  <title>Пациент</title>
+</head>
+
+<body class="page">
+  <div class="containerpopup popup_is-opened">
+    <div class="popup" id="popupadd">
+      <div class="popup__content">
+        <form class="popup__form" name="new">
+          <h3 class="popup__title">Заполните анкету пациента</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+            <label class="form-check-label" for="flexRadioDefault1"> Я мужчина. </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+            <label class="form-check-label" for="flexRadioDefault2"> Я женщина. </label>
+          </div>
+
+
+          <input name="name" class="popup__input popup__input_type_link-date" type="text" required
+            placeholder="ФИО участника" id="name" required="required" minlength="5" maxlength="40">
+          <span id="linck-name-eror" class="eror"></span>
+          <input type="number" name="age" id="age" class="popup__input popup__input_type_fio" min="18" max="100"
+             placeholder="Возраст участника" >
+          <span id="plac-name-eror" class="eror"></span>
+
+
+          <p class="popup__ansver">Болел ли кто-то в вашей семье онкозаболеваниями?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Были ли у вас в последнее время немотивированная слабость, быстрая утомляемость?
+          </p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Наблюдаете ли вы в последнее время похудание(значительное)?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Наблюдаете ли вы потерю аппетита?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Появилась ли у вас в последнее время бледность кожных покровов?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Склонны ли вы к депрессии?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас на губах или в уголках рата длительно не заживающие дефекты по типу
+            язвы или ранки с беловатым налетом или без?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас на слизистой полости рта или на языке болезненные участки, которые
+            постоянно травмируются, раздражаются зубами?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Имеются ли в полости рта или на языке длительно не заживающие дефекты слизистой?
+          </p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас на коже, особенно на лице, плотные узелки и узлы желтого, сервато-белого
+            или розового цвета, сливающиеся с кожей, плотной консистенции с видимыми сосудами или без?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Вы ведь правда читаете вопросы и честно на них отвечаете? Это важно - речь идет о вашем
+            здоровье. </p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckboxp" value="checked" required />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас на коже эрозии или язвы с плотным дном и подрытыми краями,
+            безболезненные, иногда кровоточащие?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас на коже длительно существующие образования темного цвета (родимые
+            пятна), окраска и форма которых в последнее время изменились?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Появилась ли у вас в последнее время бледность кожных покровов?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Отмечаете ли вы изменение голоса?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Бывает ли у вас нарушение глотания?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Бывает ли у вас ощущение комка в горле?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox16" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Набухают ли у вас шейные вены?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox17" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Бывает ли у вас одутловатость лица?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox18" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас хронические заболевания прямой кишки?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox19" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Наблюдаете ли вы у себя ложные позывы к акту дефекации?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox20" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Бывает ли у вас чувство неполного опорожнения кишки?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox21" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+          <p class="popup__ansver">Есть ли у вас склонность к запорам?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox22" value="option1" />
+            <label class="form-check-label" for="inlineCheckbox1">ДА</label>
+          </div>
+
+
+
+          <img src="/sursepopup/Present.svg" class="popup__logo" alt="">
+          <button type="submit" method="post" class="button popup__button popup__button_active" name="submit"
+            id="buttonsubmit">Обработать анкету</button>
+
+        </form>
+        <div class="popup__screen-container">
+          <img src="images/i.webp" class="popup__scren" alt="скриншоты">
+          <p class="popup__subtitle">
+            При заполнении анкеты необходимо быть внимательным, отвечать на вопросы максимально честно. Правильно заполненная
+            анкета может помочь в диагностике онкозаболеваний на ранней стадии.
+          </p>
+          <img src="sursepopup/smile.svg" class="popup__logo" alt="смайл">
+        </div>
+        <img class="popup__close" alt="закрыт" src="sursepopup/close.svg">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <header class="header">
+    <a href="index.html">
+      <h2 class=header__logo>САМОДИАГНОСТ</h2>
+    </a>
+    <nav>
+      <ul class="lincks">
+        <li class="lincks__linck"><a href="index.html" class="header__logo">ПАЦИЕНТ</a></li>
+        <li class="lincks__linck"><a href="indexdok.html" class="header__logo">ВРАЧ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__text-contener">
+        <span class="hero__job">ПАЦИЕНТ</span>
+        <h1 class="hero__name">Иван&nbsp;Петров</h1>
+        <p class="hero__description">Место работы: сталевар завод № 24</p>
+        <p class="hero__description">Самодиагностика позволяет обнаружить заболевания на ранней стадии и избежать их
+          развития. Самодиагностика - это удобно и быстро. Здесь вы сожете протестировать себя и, в случае необходимости, обратиться к врачу.</p>
+        <button class="hero-button hero-buttons">Необходимо пройти анкетирование</button>
+      </div>
+      <img class="hero__foto" src="images/avatarp.png" alt="фото">
+    </section>
+
+
+
+    <section class="result-container">
+      <div class="result-container__cards">
+
+      </div>
+    </section>
+
+
+
+
+    <section class="contacts">
+      <h2 class="section-title">Cвязаться с врачом</h2>
+      <article class="contacts__block">
+        <form action="#" class="contacts__form">
+          <p class="contacts__formtext">Можете просто оставить заявку. Я перезвоню вам сегодня</p>
+          <input type="text" name="fio" placeholder="Ваше имя" class="contacts__input" id="fio">
+          <input type="text" name="phone" placeholder="Ваш телефон" class="contacts__input contacts__input_phone"
+            id="phone">
+          <button class="hero-button hero-button_contacts">связаться с врачом-куратором</button>
+        </form>
+        <div class="contacts__text">
+
+          <ul class="contacts__dates">
+            <li class="contacts__data">
+              <h3 class="contacts__type">Телефон</h3>
+              <p class="contacts__value">+7 999 123 45 67</p>
+            </li>
+            <li class="contacts__data">
+              <h3 class="contacts__type">Почта</h3>
+              <p class="contacts__value">ivanov@mail.ru</p>
+            </li>
+          </ul>
+
+          <div class="contacts__socials">
+            <h3 class="contacts__type contacts__type_socials">Соцсети</h3>
+            <ul class="contacts__social">
+              <li><a href="#" class="contacts__social-link">t.me/ivanov</a></li>
+              <li><a href="#" class="contacts__social-link">vk.me/ivanov</a></li>
+              <li><a href="./testAPKforAndroid/app-release.apk" class="contacts__social-link">FOR ANDROID</a></li>
+            </ul>
+          </div>
+          <a class="contacts__confidential" href="#">Политика конфиденциальности</a>
+
+
+        </div>
+      </article>
+    </section>
+
+
+
+
+
+  </main>
+</body>
+<script src="sursepopup/parse.js"></script>
+
+</html>
