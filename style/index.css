@@ -162,4 +162,13 @@
 }
 
 
+.maps{
+    width:640;
+    height:480;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
