@@ -7,6 +7,7 @@ const heroButton = document.querySelector(".hero-button");
 const cardContainer = document.querySelector(".result-container__cards");
 const buttonSubmit = document.querySelector("#buttonsubmit");
 const checkbox = document.querySelector('#inlineCheckboxp');
+const maps = document.querySelector('#maps');
 let popupForm = document.querySelector('.popup__form');
 
 class DataStorage {
@@ -185,7 +186,7 @@ document.addEventListener('click', openImagePopup);
 
 buttonSubmit.onclick = function addCardBug(event) {
         if (popupForm.checkValidity()) {
-
+                maps.classList.add("mapsopen"); // открытие катрты.
 
                 Storage.clear();
                 cardContainer.innerHTML = "";
@@ -377,6 +378,9 @@ buttonSubmit.onclick = function addCardBug(event) {
                         inlineCheckbox21,
                         inlineCheckbox22)
 
+
+
+                
 
                 Storage.addTolocalStorage(patient.createAnsaver().name, patient.createAnsaver());
                 //Отрисовка рекомендаций пациента.

@@ -165,8 +165,16 @@
 .maps{
     width:640;
     height:480;
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+.mapsopen{
+    display: flex;
+}
+
+.section-title_maps{
+   font-size: 14px;
 }
 
 
