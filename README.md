@@ -3,7 +3,7 @@
  
  Прототип системы самодиагностики видимых локализаций злокачественных опухолей пациента, средствами анкетирования. 
 
- [![Видео работы прототипа](https://genalll.github.io/-23-Health-Science/images/avatardok.png)](https://genalll.github.io/-23-Health-Science/video/sd.ogv)
+ [![Видео работы прототипа](https://genalll.github.io/-23-Health-Science/video/vid.png)](https://genalll.github.io/-23-Health-Science/video/sd.ogv)
 
 
  
